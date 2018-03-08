@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#035874"
+    tools:context="balakrishnan.harini.assignment2.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="242dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/implicit_intents"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="81dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/sjsu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sjsu" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="237dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textUri"
+        app:layout_constraintStart_toEndOf="@+id/url"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="62dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="38dp"
+        android:labelFor="@+id/editTextUrl"
+        android:text="@string/url"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/launch"
+        android:layout_width="138dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/yellowbright"
+        android:backgroundTint="@color/yellowbright"
+        android:text="@string/launch"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextUrl"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="93dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="22dp"
+        android:labelFor="@+id/editTextPhone"
+        android:text="@string/phone"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/url" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="244dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toStartOf="@+id/Ring"
+        app:layout_constraintStart_toEndOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUrl"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/Ring"
+        android:layout_width="136dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/holo_red_dark"
+        android:backgroundTint="?attr/colorError"
+        android:text="@string/buttonRing"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/launch"
+        tools:targetApi="lollipop"
+        tools:text="Ring " />
+
+    <Button
+        android:id="@+id/CloseApp"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/background_dark"
+        android:text="@string/buttonCloseApp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        tools:text="Close App" />
+
+</android.support.constraint.ConstraintLayout>

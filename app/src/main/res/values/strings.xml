@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="implicit_intents">Implicit Intents</string>
+    <string name="sjsu">SJSU</string>
+    <string name="url">URL: </string>
+    <string name="buttonRing">Button</string>
+    <string name="buttonCloseApp">Button</string>
+    <string name="phone">Phone: </string>
+    <string name="launch">Launch</string>
+    <string name="ring">Ring</string>
+    <string name="close_app">Close App</string>
+</resources>
